@@ -5,7 +5,7 @@ public class ComputerInteraction : MonoBehaviour
 {
     public Transform computerScreenPosition;
     public GameObject computerUI;
-    public GameObject interactionCanvas;
+    //public GameObject interactionCanvas;
     public KeyCode interactKey = KeyCode.E;
     public KeyCode exitKey = KeyCode.Escape;
 
@@ -26,8 +26,8 @@ public class ComputerInteraction : MonoBehaviour
         if (computerUI != null)
             computerUI.SetActive(false);
 
-        if (interactionCanvas != null)
-            interactionCanvas.SetActive(false);
+        //if (interactionCanvas != null)
+          //  interactionCanvas.SetActive(false);
 
         if (player == null)
             Debug.LogError("No se encontró el jugador con la etiqueta 'Player'.");
@@ -38,8 +38,8 @@ public class ComputerInteraction : MonoBehaviour
         // Solo activa el canvas si el jugador entra en el área de interacción
         if (other.CompareTag("Player") && isUsingComputer == false)
         {
-            if (interactionCanvas != null && !interactionCanvas.activeSelf)
-                interactionCanvas.SetActive(true);
+            //if (interactionCanvas != null && !interactionCanvas.activeSelf)
+              //  interactionCanvas.SetActive(true);
         }
     }
 
@@ -48,8 +48,8 @@ public class ComputerInteraction : MonoBehaviour
         // Desactiva el canvas cuando el jugador sale del área de interacción
         if (other.CompareTag("Player"))
         {
-            if (interactionCanvas != null && interactionCanvas.activeSelf)
-                interactionCanvas.SetActive(false);
+            //if (interactionCanvas != null && interactionCanvas.activeSelf)
+              //  interactionCanvas.SetActive(false);
         }
     }
 
@@ -58,7 +58,7 @@ public class ComputerInteraction : MonoBehaviour
         if (player == null) return;
 
         // Si estamos cerca de la PC y presionamos la tecla para interactuar
-        if (interactionCanvas.activeSelf && Input.GetKeyDown(interactKey))
+        if ( Input.GetKeyDown(interactKey))
         {
             UseComputer();
         }
@@ -85,8 +85,8 @@ public class ComputerInteraction : MonoBehaviour
         if (computerUI != null)
             computerUI.SetActive(true);
 
-        if (interactionCanvas != null)
-            interactionCanvas.SetActive(false);
+        //if (interactionCanvas != null)
+          //  interactionCanvas.SetActive(false);
 
         // 🔴 Habilita el mouse para interactuar con la UI
         Cursor.lockState = CursorLockMode.None;
