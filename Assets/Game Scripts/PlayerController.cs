@@ -8,7 +8,7 @@ public class PlayerController : MonoBehaviour
     private CharacterController characterController;
     private float verticalRotation = 0f;
 
-    public bool canMove = true; // ✅ Variable para activar/desactivar el movimiento
+    public bool canMove = true;
 
     void Start()
     {
@@ -19,7 +19,7 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        if (canMove) // ✅ Solo permite movimiento si canMove es true
+        if (canMove)
         {
             Move();
             Rotate();
@@ -28,8 +28,14 @@ public class PlayerController : MonoBehaviour
 
     void Move()
     {
-        float moveX = Input.GetAxis("Horizontal");
-        float moveZ = Input.GetAxis("Vertical");
+        float moveX = 0f;
+        float moveZ = 0f;
+
+        // Solo detectar WSAD, no flechas
+        if (Input.GetKey(KeyCode.W)) moveZ = 1f;
+        if (Input.GetKey(KeyCode.S)) moveZ = -1f;
+        if (Input.GetKey(KeyCode.D)) moveX = 1f;
+        if (Input.GetKey(KeyCode.A)) moveX = -1f;
 
         Vector3 move = transform.right * moveX + transform.forward * moveZ;
         characterController.Move(move * speed * Time.deltaTime);
