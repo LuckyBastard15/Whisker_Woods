@@ -19,11 +19,14 @@ public class ComputerInteraction : MonoBehaviour
 
     private int interactionCount = 0; 
 
-    private bool hasReachedLimit = false; 
+    private bool hasReachedLimit = false;
+    public GameObject Luces;
+    private RandomLights randomLights;
 
 
     private void Start()
     {
+        randomLights = Luces.GetComponent<RandomLights>();
         player = GameObject.FindGameObjectWithTag("Player")?.transform;
         if (player != null)
             playerControllerScript = player.GetComponent<PlayerController>();
@@ -49,7 +52,7 @@ public class ComputerInteraction : MonoBehaviour
             UseComputer();
         }
 
-        if (isUsingComputer && Input.GetKeyDown(exitKey))
+        if (isUsingComputer && Input.GetKeyDown(KeyCode.Q))
         {
             ExitComputer();
         }
@@ -57,7 +60,7 @@ public class ComputerInteraction : MonoBehaviour
 
     void UseComputer()
     {
-        if (hasReachedLimit) return; // ✅ Si ya alcanzó el límite, no puede volver a usarla
+        if (hasReachedLimit) return; 
 
         if (playerControllerScript != null)
             playerControllerScript.canMove = false;
@@ -107,11 +110,11 @@ public class ComputerInteraction : MonoBehaviour
             case 3:
 
                 Debug.Log("Aparece un sonido extraño.");
-               
+                randomLights.enabled = true;
                 break;
 
             case 5:
-                Debug.Log(" Una luz parpadea.");
+                Debug.Log(" luz parpadea.");
                 
                 break;
 
