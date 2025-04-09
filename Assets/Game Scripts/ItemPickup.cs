@@ -4,7 +4,7 @@ public class ItemPickup : MonoBehaviour
 {
     private bool playerInRange = false;
     public GameObject canvasitem;
-    public Transform dropPosition; // Posición específica donde este objeto debe ser soltado
+    public Transform dropPosition; 
 
     private void OnTriggerEnter(Collider other)
     {
@@ -22,6 +22,7 @@ public class ItemPickup : MonoBehaviour
         }
     }
 
+    [System.Obsolete]
     private void Update()
     {
         if (playerInRange && Input.GetKeyDown(KeyCode.E))

@@ -142,8 +142,8 @@ public class ComputerInteraction : MonoBehaviour
                 KillPlayer();
                 hasReachedLimit = true;
                 break;
-                KillPlayer();
-                break;
+                //KillPlayer();
+                //break;
 
             default:
                 Debug.Log("Interacción sin evento especial.");
