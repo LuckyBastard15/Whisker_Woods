@@ -22,6 +22,7 @@ public class ComputerInteraction : MonoBehaviour
     private bool hasReachedLimit = false;
     public GameObject Luces;
     private RandomLights randomLights;
+    [SerializeField] private GameObject Fog;
 
 
     private void Start()
@@ -115,7 +116,7 @@ public class ComputerInteraction : MonoBehaviour
 
             case 5:
                 Debug.Log(" luz parpadea.");
-                
+                Fog.SetActive(true);
                 break;
 
             case 8:
