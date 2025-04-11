@@ -21382,7 +21382,7 @@ MonoBehaviour:
   computerCollider: {fileID: 613963563}
   transitionDuration: 1
   Luces: {fileID: 677890913}
-  Fog: {fileID: 0}
+  Fog: {fileID: 1256340588}
 --- !u!1 &1189891822
 GameObject:
   m_ObjectHideFlags: 0
