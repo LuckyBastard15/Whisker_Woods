@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Player2D
   - Cuadro
+  - Camera2D
+  - PCScreen
   layers:
   - Default
   - TransparentFX

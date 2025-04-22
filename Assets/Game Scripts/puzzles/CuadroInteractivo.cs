@@ -20,6 +20,7 @@ public class CuadroInteractivo : MonoBehaviour
                 RaycastHit hit;
                 if (Physics.Raycast(Camera.main.transform.position, Camera.main.transform.forward, out hit, distancia))
                 {
+                    
                     CuadrosPuzzle cuadro = hit.collider.GetComponent<CuadrosPuzzle>();
                     if (cuadro != null && !cuadro.estaAgarrado && !cuadro.yaColocado)  
                     {
