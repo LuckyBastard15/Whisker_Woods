@@ -3,7 +3,9 @@ using UnityEngine;
 public class NpcInteraction : MonoBehaviour
 {
     [SerializeField] private GameObject text1;
-    [SerializeField] private GameObject lockImage;
+
+    [SerializeField, Tooltip("Opcional: Imagen que representa el candado (puede dejarse vacío)")]
+    private GameObject lockImage;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()

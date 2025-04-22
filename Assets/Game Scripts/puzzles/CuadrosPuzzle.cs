@@ -7,7 +7,7 @@ public class CuadrosPuzzle : MonoBehaviour
     public bool estaAgarrado = false;
     public bool yaColocado = false;
 
-    private Vector3 escalaOriginal;  // 👈 Para guardar la escala original
+    private Vector3 escalaOriginal;  
 
     void Start()
     {
