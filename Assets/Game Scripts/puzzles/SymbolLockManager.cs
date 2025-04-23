@@ -10,6 +10,7 @@ public class SymbolLockManager : MonoBehaviour
 
     private PlayerMovement playerMovementScript;
     public GameObject npcObject;
+    [SerializeField] public Manager manager;
 
 
     private void Start()
@@ -52,6 +53,7 @@ public class SymbolLockManager : MonoBehaviour
             npcScript.enabled = false;
             Debug.Log("NpcInteraction desactivado");
             Debug.Log("Dar Item");
+            manager.Puzzle1Completed();
 
         }
     }

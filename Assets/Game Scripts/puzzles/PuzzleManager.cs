@@ -15,6 +15,7 @@ public class PuzzleManager : MonoBehaviour
 
     [SerializeField] private PlayerMovement playerMovementScript;
     public GameObject npcObject;
+    [SerializeField] private Manager manager;
 
     public void TrySelectNode(PathNode node)
     {
@@ -57,8 +58,9 @@ public class PuzzleManager : MonoBehaviour
                 npcScript.enabled = false;
             }
             
-            Debug.Log("Dar Item");
 
+            Debug.Log("Dar Item");
+            manager.Puzzle3Completed();
             
         }
     }
