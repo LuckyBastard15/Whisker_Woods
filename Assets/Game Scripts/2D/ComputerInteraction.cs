@@ -1,13 +1,14 @@
 ﻿using UnityEngine;
 using DG.Tweening;
+using System.Collections;
 
 public class ComputerInteraction : MonoBehaviour
 {
     public Transform computerScreenPosition;
     public GameObject computerUI;
-    public KeyCode interactKey = KeyCode.E;
-    public KeyCode exitKey = KeyCode.Escape;
-    public Collider computerCollider; 
+    //public KeyCode interactKey = KeyCode.E;
+    //public KeyCode exitKey = KeyCode.Q;  // Tecla para salir
+    public Collider computerCollider;
 
     private Transform player;
     private PlayerController playerControllerScript;
@@ -17,20 +18,22 @@ public class ComputerInteraction : MonoBehaviour
 
     public float transitionDuration = 1f;
 
-    private int interactionCount = 0; 
+    private int interactionCount = 0;
 
     private bool hasReachedLimit = false;
     public GameObject Luces;
-    private RandomLights randomLights;
+    [SerializeField] private RandomLights randomLights;
     [SerializeField] private GameObject Fog;
     [SerializeField] private GameObject player3D;
     [SerializeField] private PlayerController PlayerController;
-    
+    [SerializeField] private PlayerDies PlayerDies;
 
+    // Nueva variable para controlar el delay entre interacciones
+    private bool canInteract = true;
+    public float interactionDelay = 5f;  // Tiempo de espera entre interacciones
 
     private void Start()
     {
-       
         player = GameObject.FindGameObjectWithTag("Player")?.transform;
         if (player != null)
             playerControllerScript = player.GetComponent<PlayerController>();
@@ -47,30 +50,41 @@ public class ComputerInteraction : MonoBehaviour
 
     private void Update()
     {
-        if(isUsingComputer == true)
+        if (isUsingComputer == true)
         {
             player3D.GetComponent<PlayerController>().canMove = false;
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
         }
+
         if (player == null || computerCollider == null) return;
 
         bool isPlayerInside = computerCollider.bounds.Contains(player.position);
 
-        if (Input.GetKeyDown(interactKey) && isPlayerInside && !isUsingComputer)
+        // Iniciar la computadora solo si puede interactuar
+        if (Input.GetKeyDown(KeyCode.E) && isPlayerInside && !isUsingComputer && canInteract)
         {
-            UseComputer();
+            StartCoroutine(UseComputerWithDelay());
         }
 
-        if (isUsingComputer && Input.GetKeyDown(KeyCode.Q))
+        // Salir de la computadora solo si puede interactuar
+        if (isUsingComputer && Input.GetKeyDown(KeyCode.Q) && canInteract)
         {
-            ExitComputer();
+            StartCoroutine(ExitComputerWithDelay());
         }
     }
 
-    void UseComputer()
+    private IEnumerator UseComputerWithDelay()
     {
-        if (hasReachedLimit) return; 
+        canInteract = false;  // Desactivar interacción mientras está el delay
+        UseComputer();
+        yield return new WaitForSeconds(interactionDelay);  // Espera el delay antes de permitir más interacciones
+        canInteract = true;  // Rehabilitar interacción
+    }
+
+    private void UseComputer()
+    {
+        if (hasReachedLimit) return;
 
         if (playerControllerScript != null)
             playerControllerScript.canMove = false;
@@ -95,8 +109,15 @@ public class ComputerInteraction : MonoBehaviour
         TriggerInteractionEvent(interactionCount);
     }
 
+    private IEnumerator ExitComputerWithDelay()
+    {
+        canInteract = false;  // Desactivar interacción mientras está el delay
+        ExitComputer();
+        yield return new WaitForSeconds(interactionDelay);  // Espera el delay antes de permitir más interacciones
+        canInteract = true;  // Rehabilitar interacción
+    }
 
-    void ExitComputer()
+    private void ExitComputer()
     {
         if (playerControllerScript != null)
             playerControllerScript.canMove = true;
@@ -118,7 +139,6 @@ public class ComputerInteraction : MonoBehaviour
         switch (count)
         {
             case 3:
-
                 Debug.Log("Aparece un sonido extraño.");
                 randomLights.enabled = true;
                 break;
@@ -130,33 +150,26 @@ public class ComputerInteraction : MonoBehaviour
 
             case 8:
                 Debug.Log(" El entorno cambia ligeramente.");
-                
+                KillPlayer();
                 break;
 
             case 10:
                 Debug.Log(" La pantalla de la computadora se distorsiona.");
-                
                 break;
 
             case 13:
                 Debug.Log(" Se escucha un maullido aterrador.");
-                
                 break;
 
             case 15:
                 Debug.Log(" La computadora intenta apagarse sola.");
-                
                 break;
 
             case 17:
-
-          
                 Debug.Log("Evento en interacción 17: ¡El jugador muere!");
                 KillPlayer();
                 hasReachedLimit = true;
                 break;
-                //KillPlayer();
-                //break;
 
             default:
                 Debug.Log("Interacción sin evento especial.");
@@ -166,10 +179,10 @@ public class ComputerInteraction : MonoBehaviour
 
     void KillPlayer()
     {
-
-        
-        
+        ExitComputer();
+        PlayerDies.PlayerDiesActive();
         Debug.Log("Game Over. Puedes poner aquí una animación o cargar otra escena.");
         //SceneManager.LoadScene("GameOverScene");
     }
 }
+ 

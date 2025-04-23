@@ -8,7 +8,10 @@ public class CuadroInteractivo : MonoBehaviour
     private CuadrosPuzzle cuadroActual = null;
     public GameObject Arm;
     public List<CuadrosPuzzle> cuadrosPuzzle;  
-    private int cuadrosColocados = 0;  
+    private int cuadrosColocados = 0;
+    [SerializeField] private Manager manager;
+    
+    
 
     void Update()
     {
@@ -74,6 +77,7 @@ public class CuadroInteractivo : MonoBehaviour
     private void ActivarEvento()
     {
         Debug.Log("¡Todos los cuadros están en su lugar! Evento activado.");
+        manager.Puzzle2Completed();
         
     }
 }
