@@ -23,11 +23,14 @@ public class ComputerInteraction : MonoBehaviour
     public GameObject Luces;
     private RandomLights randomLights;
     [SerializeField] private GameObject Fog;
+    [SerializeField] private GameObject player3D;
+    [SerializeField] private PlayerController PlayerController;
+    
 
 
     private void Start()
     {
-        randomLights = Luces.GetComponent<RandomLights>();
+       
         player = GameObject.FindGameObjectWithTag("Player")?.transform;
         if (player != null)
             playerControllerScript = player.GetComponent<PlayerController>();
@@ -44,6 +47,12 @@ public class ComputerInteraction : MonoBehaviour
 
     private void Update()
     {
+        if(isUsingComputer == true)
+        {
+            player3D.GetComponent<PlayerController>().canMove = false;
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+        }
         if (player == null || computerCollider == null) return;
 
         bool isPlayerInside = computerCollider.bounds.Contains(player.position);
