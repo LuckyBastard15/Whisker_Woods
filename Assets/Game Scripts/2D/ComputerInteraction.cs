@@ -14,6 +14,7 @@ public class ComputerInteraction : MonoBehaviour
     private PlayerController playerControllerScript;
     private bool isUsingComputer = false;
     private Vector3 originalPosition;
+    private Vector3 originalCameraPosition;
     private Quaternion originalRotation;
 
     public float transitionDuration = 1f;
@@ -27,6 +28,11 @@ public class ComputerInteraction : MonoBehaviour
     [SerializeField] private GameObject player3D;
     [SerializeField] private PlayerController PlayerController;
     [SerializeField] private PlayerDies PlayerDies;
+
+    [SerializeField] private VirtualPCInput VirtualPCInput;
+
+    [SerializeField] private Transform cameraPos;
+    [SerializeField] private Transform cameraPlayer;
 
     // Nueva variable para controlar el delay entre interacciones
     private bool canInteract = true;
@@ -84,6 +90,9 @@ public class ComputerInteraction : MonoBehaviour
 
     private void UseComputer()
     {
+        //VirtualPCInput.UsingPcNow();
+
+
         if (hasReachedLimit) return;
 
         if (playerControllerScript != null)
@@ -91,9 +100,17 @@ public class ComputerInteraction : MonoBehaviour
 
         originalPosition = player.position;
         originalRotation = player.rotation;
+        originalCameraPosition = cameraPlayer.position;
 
+        cameraPlayer.DOMove(cameraPos.position, transitionDuration).SetEase(Ease.InOutQuad);
+        cameraPlayer.DORotateQuaternion(cameraPos.rotation, transitionDuration).SetEase(Ease.InOutQuad);
+
+        // Mover y rotar al player suavemente
         player.DOMove(computerScreenPosition.position, transitionDuration).SetEase(Ease.InOutQuad);
         player.DORotateQuaternion(computerScreenPosition.rotation, transitionDuration).SetEase(Ease.InOutQuad);
+
+
+
 
         if (computerUI != null)
             computerUI.SetActive(true);
@@ -118,12 +135,18 @@ public class ComputerInteraction : MonoBehaviour
     }
 
     private void ExitComputer()
+
     {
+        
+
         if (playerControllerScript != null)
             playerControllerScript.canMove = true;
 
         player.DOMove(originalPosition, transitionDuration).SetEase(Ease.InOutQuad);
         player.DORotateQuaternion(originalRotation, transitionDuration).SetEase(Ease.InOutQuad);
+
+        cameraPlayer.DOMove(originalCameraPosition, transitionDuration).SetEase(Ease.InOutBack);
+
 
         if (computerUI != null)
             computerUI.SetActive(false);

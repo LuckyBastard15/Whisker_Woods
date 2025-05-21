@@ -9,6 +9,11 @@ public class Manager : MonoBehaviour
     public bool puzzle4Completed = false;
 
     [SerializeField] private PlayerDies playerDies;
+    [SerializeField] private GameObject Item1;
+    [SerializeField] private GameObject Item2;
+    [SerializeField] private GameObject Item3;
+    //[SerializeField] private GameObject Item4;
+
 
     void Update()
     {
@@ -16,6 +21,21 @@ public class Manager : MonoBehaviour
         {
             AllPuzzlesCompleted();
         }
+
+        if (puzzle1Completed)
+        {
+            Item1.SetActive(true);
+        }
+        if (puzzle2Completed)
+        {
+            Item2.SetActive(true);
+        }
+        if (puzzle3Completed)
+        {
+            Item3.SetActive(true);
+        }
+
+
     }
 
     public void AllPuzzlesCompleted()
@@ -29,18 +49,23 @@ public class Manager : MonoBehaviour
     {
         puzzle1Completed = true;
         Debug.Log("Puzzle 1 completado");
+        Item1.SetActive(true);
     }
 
     public void Puzzle2Completed()
     {
         puzzle2Completed = true;
         Debug.Log("Puzzle 2 completado");
+        Item2.SetActive(true);
     }
 
     public void Puzzle3Completed()
     {
         puzzle3Completed = true;
+
         Debug.Log("Puzzle 3 completado");
+        Item3.SetActive(true);  
+
     }
 
     public void Puzzle4Completed()
