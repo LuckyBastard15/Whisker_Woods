@@ -11,6 +11,7 @@ public class SymbolLockManager : MonoBehaviour
     private PlayerMovement playerMovementScript;
     public GameObject npcObject;
     [SerializeField] public Manager manager;
+    
 
 
     private void Start()

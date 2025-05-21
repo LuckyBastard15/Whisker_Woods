@@ -7,20 +7,19 @@ public class PlayerMovement : MonoBehaviour
     public float moveSpeed = 5f;
 
     private Rigidbody2D rb;
+    private Animator animator;
     private Vector2 movement;
+    private string lastDirection = "Down"; // Para saber qué Idle usar
 
     void Start()
     {
-        // Asegurarse de que el Rigidbody2D y el BoxCollider2D existen
         rb = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
 
         if (GetComponent<BoxCollider2D>() == null)
-        {
             gameObject.AddComponent<BoxCollider2D>();
-        }
 
-        // Opcional: ajustar configuración del Rigidbody2D
-        rb.gravityScale = 0f; // Para evitar que caiga si estás haciendo un juego 2D tipo top-down
+        rb.gravityScale = 0f;
         rb.freezeRotation = true;
     }
 
@@ -28,19 +27,64 @@ public class PlayerMovement : MonoBehaviour
     {
         movement = Vector2.zero;
 
-        if (Input.GetKey(KeyCode.UpArrow))
-            movement.y = 1;
-        else if (Input.GetKey(KeyCode.DownArrow))
-            movement.y = -1;
+        bool up = Input.GetKey(KeyCode.UpArrow);
+        bool down = Input.GetKey(KeyCode.DownArrow);
+        bool left = Input.GetKey(KeyCode.LeftArrow);
+        bool right = Input.GetKey(KeyCode.RightArrow);
 
-        if (Input.GetKey(KeyCode.RightArrow))
+        if (up)
+        {
+            movement.y = 1;
+            SetWalkDirection("Up");
+        }
+        else if (down)
+        {
+            movement.y = -1;
+            SetWalkDirection("Down");
+        }
+
+        if (right)
+        {
             movement.x = 1;
-        else if (Input.GetKey(KeyCode.LeftArrow))
+            SetWalkDirection("Right");
+        }
+        else if (left)
+        {
             movement.x = -1;
+            SetWalkDirection("Left");
+        }
+
+        if (!up && !down && !left && !right)
+        {
+            SetIdleDirection(lastDirection);
+        }
     }
 
     void FixedUpdate()
     {
         rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
+    }
+
+    void SetWalkDirection(string direction)
+    {
+        ResetAllBools();
+        animator.SetBool("Walk" + direction, true);
+        lastDirection = direction;
+    }
+
+    void SetIdleDirection(string direction)
+    {
+        ResetAllBools();
+        animator.SetBool("Idle" + direction, true);
+    }
+
+    void ResetAllBools()
+    {
+        string[] directions = { "Up", "Down", "Left", "Right" };
+        foreach (string dir in directions)
+        {
+            animator.SetBool("Walk" + dir, false);
+            animator.SetBool("Idle" + dir, false);
+        }
     }
 }

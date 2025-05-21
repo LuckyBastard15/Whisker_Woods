@@ -8,6 +8,7 @@ TagManager:
   - Cuadro
   - Camera2D
   - PCScreen
+  - Botton2D
   layers:
   - Default
   - TransparentFX
