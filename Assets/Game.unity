@@ -3303,6 +3303,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 512cefec89dc65b41a1b59e925fe7e43, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 512cefec89dc65b41a1b59e925fe7e43, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 512cefec89dc65b41a1b59e925fe7e43, type: 3}
+      propertyPath: m_DynamicOccludee
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 512cefec89dc65b41a1b59e925fe7e43, type: 3}
       propertyPath: m_Name
       value: SM_Ventilador
@@ -7079,6 +7091,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 512cefec89dc65b41a1b59e925fe7e43, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 512cefec89dc65b41a1b59e925fe7e43, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 512cefec89dc65b41a1b59e925fe7e43, type: 3}
+      propertyPath: m_DynamicOccludee
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 512cefec89dc65b41a1b59e925fe7e43, type: 3}
       propertyPath: m_Name
       value: SM_Ventilador (7)
@@ -8621,6 +8645,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 512cefec89dc65b41a1b59e925fe7e43, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 512cefec89dc65b41a1b59e925fe7e43, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 512cefec89dc65b41a1b59e925fe7e43, type: 3}
       propertyPath: m_Name
       value: SM_Ventilador (5)
@@ -9789,6 +9821,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 512cefec89dc65b41a1b59e925fe7e43, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 512cefec89dc65b41a1b59e925fe7e43, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 512cefec89dc65b41a1b59e925fe7e43, type: 3}
+      propertyPath: m_DynamicOccludee
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 512cefec89dc65b41a1b59e925fe7e43, type: 3}
       propertyPath: m_Name
       value: SM_Ventilador (4)
@@ -10922,6 +10966,18 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 9c6081b3dc6d43d4abe46a91fd59bc2a, type: 3}
       propertyPath: m_Name
       value: SM_Plato (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1129496810705857465, guid: 9c6081b3dc6d43d4abe46a91fd59bc2a, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1129496810705857465, guid: 9c6081b3dc6d43d4abe46a91fd59bc2a, type: 3}
+      propertyPath: m_MotionVectors
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1129496810705857465, guid: 9c6081b3dc6d43d4abe46a91fd59bc2a, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
@@ -13600,6 +13656,18 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 285e540b39f138143af52e6be1179795, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 285e540b39f138143af52e6be1179795, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 285e540b39f138143af52e6be1179795, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 285e540b39f138143af52e6be1179795, type: 3}
+      propertyPath: m_DynamicOccludee
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 285e540b39f138143af52e6be1179795, type: 3}
       propertyPath: m_Name
@@ -17105,6 +17173,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 12d159a0a5e15d547a83b1a2acee7511, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -5971410051629635644, guid: 12d159a0a5e15d547a83b1a2acee7511, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -5971410051629635644, guid: 12d159a0a5e15d547a83b1a2acee7511, type: 3}
+      propertyPath: m_RayTracingMode
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 12d159a0a5e15d547a83b1a2acee7511, type: 3}
@@ -27537,6 +27613,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 481129180acc03549b67cd6a494238bf, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 481129180acc03549b67cd6a494238bf, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 481129180acc03549b67cd6a494238bf, type: 3}
       propertyPath: m_Name
       value: SM_buro
@@ -27669,6 +27753,14 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 481129180acc03549b67cd6a494238bf, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 481129180acc03549b67cd6a494238bf, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 481129180acc03549b67cd6a494238bf, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 481129180acc03549b67cd6a494238bf, type: 3}
       propertyPath: m_Name
@@ -29060,6 +29152,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Refrigerador
       objectReference: {fileID: 0}
+    - target: {fileID: 2927593092117553206, guid: 35fc546e33a40e944b5ea12901708d8e, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2927593092117553206, guid: 35fc546e33a40e944b5ea12901708d8e, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 65702495048144492, guid: 35fc546e33a40e944b5ea12901708d8e, type: 3}
@@ -29337,6 +29437,18 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 4f2f26329f1dba5469adafad01fefca0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 4f2f26329f1dba5469adafad01fefca0, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 4f2f26329f1dba5469adafad01fefca0, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 4f2f26329f1dba5469adafad01fefca0, type: 3}
+      propertyPath: m_DynamicOccludee
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 4f2f26329f1dba5469adafad01fefca0, type: 3}
       propertyPath: m_Name
@@ -30709,6 +30821,18 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 512cefec89dc65b41a1b59e925fe7e43, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 512cefec89dc65b41a1b59e925fe7e43, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 512cefec89dc65b41a1b59e925fe7e43, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 512cefec89dc65b41a1b59e925fe7e43, type: 3}
+      propertyPath: m_DynamicOccludee
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 512cefec89dc65b41a1b59e925fe7e43, type: 3}
       propertyPath: m_Name
@@ -32969,7 +33093,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: 67ff878864c51ff41842e51d38777f45, type: 3}
       propertyPath: m_CastShadows
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 67ff878864c51ff41842e51d38777f45, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: 67ff878864c51ff41842e51d38777f45, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
@@ -34928,6 +35056,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Taza
       objectReference: {fileID: 0}
+    - target: {fileID: 4325978626593613888, guid: 15f364ea420c4bc4ea4a362634985550, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4325978626593613888, guid: 15f364ea420c4bc4ea4a362634985550, type: 3}
+      propertyPath: m_MotionVectors
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4325978626593613888, guid: 15f364ea420c4bc4ea4a362634985550, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 65702495048144492, guid: 15f364ea420c4bc4ea4a362634985550, type: 3}
@@ -36562,6 +36702,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 481129180acc03549b67cd6a494238bf, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 481129180acc03549b67cd6a494238bf, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 481129180acc03549b67cd6a494238bf, type: 3}
       propertyPath: m_Name
       value: SM_buro (3)
@@ -36986,6 +37134,18 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: a3418504685846e41bd35b9076d4c1d3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: a3418504685846e41bd35b9076d4c1d3, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: a3418504685846e41bd35b9076d4c1d3, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: a3418504685846e41bd35b9076d4c1d3, type: 3}
+      propertyPath: m_DynamicOccludee
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: a3418504685846e41bd35b9076d4c1d3, type: 3}
       propertyPath: m_Name
@@ -37760,6 +37920,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -6673802680727711063, guid: 36ab88573363e474c8ffd704fc3775e6, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -6673802680727711063, guid: 36ab88573363e474c8ffd704fc3775e6, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 36ab88573363e474c8ffd704fc3775e6, type: 3}
       propertyPath: m_Name
       value: SM_Sillon (1)
@@ -38499,6 +38667,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -787141429326784033, guid: 52b95a91689bd4b439929a6bc1f60e76, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -787141429326784033, guid: 52b95a91689bd4b439929a6bc1f60e76, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 52b95a91689bd4b439929a6bc1f60e76, type: 3}
       propertyPath: m_Name
       value: SM_Mesa_centro
@@ -38724,6 +38900,18 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 512cefec89dc65b41a1b59e925fe7e43, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 512cefec89dc65b41a1b59e925fe7e43, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 512cefec89dc65b41a1b59e925fe7e43, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 512cefec89dc65b41a1b59e925fe7e43, type: 3}
+      propertyPath: m_DynamicOccludee
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 512cefec89dc65b41a1b59e925fe7e43, type: 3}
       propertyPath: m_Name
@@ -39381,6 +39569,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 9c6081b3dc6d43d4abe46a91fd59bc2a, type: 3}
       propertyPath: m_Name
       value: SM_Plato
+      objectReference: {fileID: 0}
+    - target: {fileID: 1129496810705857465, guid: 9c6081b3dc6d43d4abe46a91fd59bc2a, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1129496810705857465, guid: 9c6081b3dc6d43d4abe46a91fd59bc2a, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
@@ -54753,6 +54949,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 512cefec89dc65b41a1b59e925fe7e43, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 512cefec89dc65b41a1b59e925fe7e43, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 512cefec89dc65b41a1b59e925fe7e43, type: 3}
+      propertyPath: m_DynamicOccludee
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 512cefec89dc65b41a1b59e925fe7e43, type: 3}
       propertyPath: m_Name
       value: SM_Ventilador (2)
@@ -56202,6 +56410,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -5971410051629635644, guid: 12d159a0a5e15d547a83b1a2acee7511, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -5971410051629635644, guid: 12d159a0a5e15d547a83b1a2acee7511, type: 3}
+      propertyPath: m_MotionVectors
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -5971410051629635644, guid: 12d159a0a5e15d547a83b1a2acee7511, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -5971410051629635644, guid: 12d159a0a5e15d547a83b1a2acee7511, type: 3}
+      propertyPath: m_DynamicOccludee
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 12d159a0a5e15d547a83b1a2acee7511, type: 3}
       propertyPath: m_Name
       value: SM_Ventana (1)
@@ -56480,6 +56704,18 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 15f364ea420c4bc4ea4a362634985550, type: 3}
       propertyPath: m_Name
       value: SM_Taza (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4325978626593613888, guid: 15f364ea420c4bc4ea4a362634985550, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4325978626593613888, guid: 15f364ea420c4bc4ea4a362634985550, type: 3}
+      propertyPath: m_MotionVectors
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4325978626593613888, guid: 15f364ea420c4bc4ea4a362634985550, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
@@ -56841,6 +57077,18 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 512cefec89dc65b41a1b59e925fe7e43, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 512cefec89dc65b41a1b59e925fe7e43, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 512cefec89dc65b41a1b59e925fe7e43, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 512cefec89dc65b41a1b59e925fe7e43, type: 3}
+      propertyPath: m_DynamicOccludee
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 512cefec89dc65b41a1b59e925fe7e43, type: 3}
       propertyPath: m_Name
@@ -59218,9 +59466,153 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -6673802680727711063, guid: 227f82f471997eb4eaca716d1cfd1ddb, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -6673802680727711063, guid: 227f82f471997eb4eaca716d1cfd1ddb, type: 3}
+      propertyPath: m_MotionVectors
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -6673802680727711063, guid: 227f82f471997eb4eaca716d1cfd1ddb, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -6673802680727711063, guid: 227f82f471997eb4eaca716d1cfd1ddb, type: 3}
+      propertyPath: m_DynamicOccludee
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -6390553425048673252, guid: 227f82f471997eb4eaca716d1cfd1ddb, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -6390553425048673252, guid: 227f82f471997eb4eaca716d1cfd1ddb, type: 3}
+      propertyPath: m_MotionVectors
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -6390553425048673252, guid: 227f82f471997eb4eaca716d1cfd1ddb, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -6390553425048673252, guid: 227f82f471997eb4eaca716d1cfd1ddb, type: 3}
+      propertyPath: m_DynamicOccludee
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4718040791104185828, guid: 227f82f471997eb4eaca716d1cfd1ddb, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4718040791104185828, guid: 227f82f471997eb4eaca716d1cfd1ddb, type: 3}
+      propertyPath: m_MotionVectors
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -4718040791104185828, guid: 227f82f471997eb4eaca716d1cfd1ddb, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4718040791104185828, guid: 227f82f471997eb4eaca716d1cfd1ddb, type: 3}
+      propertyPath: m_DynamicOccludee
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -2042359963714989658, guid: 227f82f471997eb4eaca716d1cfd1ddb, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -2042359963714989658, guid: 227f82f471997eb4eaca716d1cfd1ddb, type: 3}
+      propertyPath: m_MotionVectors
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -2042359963714989658, guid: 227f82f471997eb4eaca716d1cfd1ddb, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -2042359963714989658, guid: 227f82f471997eb4eaca716d1cfd1ddb, type: 3}
+      propertyPath: m_DynamicOccludee
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 227f82f471997eb4eaca716d1cfd1ddb, type: 3}
       propertyPath: m_Name
       value: SM_estufa
+      objectReference: {fileID: 0}
+    - target: {fileID: 1129496810705857465, guid: 227f82f471997eb4eaca716d1cfd1ddb, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1129496810705857465, guid: 227f82f471997eb4eaca716d1cfd1ddb, type: 3}
+      propertyPath: m_MotionVectors
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1129496810705857465, guid: 227f82f471997eb4eaca716d1cfd1ddb, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1129496810705857465, guid: 227f82f471997eb4eaca716d1cfd1ddb, type: 3}
+      propertyPath: m_DynamicOccludee
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1746654310787607633, guid: 227f82f471997eb4eaca716d1cfd1ddb, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1746654310787607633, guid: 227f82f471997eb4eaca716d1cfd1ddb, type: 3}
+      propertyPath: m_MotionVectors
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1746654310787607633, guid: 227f82f471997eb4eaca716d1cfd1ddb, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1746654310787607633, guid: 227f82f471997eb4eaca716d1cfd1ddb, type: 3}
+      propertyPath: m_DynamicOccludee
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4433749582598619397, guid: 227f82f471997eb4eaca716d1cfd1ddb, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4433749582598619397, guid: 227f82f471997eb4eaca716d1cfd1ddb, type: 3}
+      propertyPath: m_MotionVectors
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4433749582598619397, guid: 227f82f471997eb4eaca716d1cfd1ddb, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4433749582598619397, guid: 227f82f471997eb4eaca716d1cfd1ddb, type: 3}
+      propertyPath: m_DynamicOccludee
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7062007658114913563, guid: 227f82f471997eb4eaca716d1cfd1ddb, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7062007658114913563, guid: 227f82f471997eb4eaca716d1cfd1ddb, type: 3}
+      propertyPath: m_MotionVectors
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7062007658114913563, guid: 227f82f471997eb4eaca716d1cfd1ddb, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7062007658114913563, guid: 227f82f471997eb4eaca716d1cfd1ddb, type: 3}
+      propertyPath: m_DynamicOccludee
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8089062573417005363, guid: 227f82f471997eb4eaca716d1cfd1ddb, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8089062573417005363, guid: 227f82f471997eb4eaca716d1cfd1ddb, type: 3}
+      propertyPath: m_MotionVectors
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8089062573417005363, guid: 227f82f471997eb4eaca716d1cfd1ddb, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8089062573417005363, guid: 227f82f471997eb4eaca716d1cfd1ddb, type: 3}
+      propertyPath: m_DynamicOccludee
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
@@ -59847,6 +60239,18 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 285e540b39f138143af52e6be1179795, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 285e540b39f138143af52e6be1179795, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 285e540b39f138143af52e6be1179795, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 285e540b39f138143af52e6be1179795, type: 3}
+      propertyPath: m_DynamicOccludee
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 285e540b39f138143af52e6be1179795, type: 3}
       propertyPath: m_Name
@@ -62593,7 +62997,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.00012207031, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1891510254
@@ -62768,6 +63172,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 481129180acc03549b67cd6a494238bf, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 481129180acc03549b67cd6a494238bf, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 481129180acc03549b67cd6a494238bf, type: 3}
+      propertyPath: m_RayTracingMode
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 481129180acc03549b67cd6a494238bf, type: 3}
@@ -63751,6 +64163,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 36ab88573363e474c8ffd704fc3775e6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -6673802680727711063, guid: 36ab88573363e474c8ffd704fc3775e6, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -6673802680727711063, guid: 36ab88573363e474c8ffd704fc3775e6, type: 3}
+      propertyPath: m_RayTracingMode
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 36ab88573363e474c8ffd704fc3775e6, type: 3}
@@ -67598,7 +68018,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.00012207031, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2055414896
@@ -69342,6 +69762,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -90
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 285e540b39f138143af52e6be1179795, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 285e540b39f138143af52e6be1179795, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 285e540b39f138143af52e6be1179795, type: 3}
+      propertyPath: m_DynamicOccludee
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 285e540b39f138143af52e6be1179795, type: 3}
       propertyPath: m_Name
       value: SM_Closet
@@ -69548,6 +69980,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 36ab88573363e474c8ffd704fc3775e6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -6673802680727711063, guid: 36ab88573363e474c8ffd704fc3775e6, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -6673802680727711063, guid: 36ab88573363e474c8ffd704fc3775e6, type: 3}
+      propertyPath: m_RayTracingMode
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 36ab88573363e474c8ffd704fc3775e6, type: 3}
