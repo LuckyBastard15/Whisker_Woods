@@ -3308,12 +3308,16 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: 512cefec89dc65b41a1b59e925fe7e43, type: 3}
+      propertyPath: m_MotionVectors
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 512cefec89dc65b41a1b59e925fe7e43, type: 3}
       propertyPath: m_RayTracingMode
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: 512cefec89dc65b41a1b59e925fe7e43, type: 3}
       propertyPath: m_DynamicOccludee
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 512cefec89dc65b41a1b59e925fe7e43, type: 3}
       propertyPath: m_Name
@@ -7096,12 +7100,16 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: 512cefec89dc65b41a1b59e925fe7e43, type: 3}
+      propertyPath: m_MotionVectors
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 512cefec89dc65b41a1b59e925fe7e43, type: 3}
       propertyPath: m_RayTracingMode
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: 512cefec89dc65b41a1b59e925fe7e43, type: 3}
       propertyPath: m_DynamicOccludee
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 512cefec89dc65b41a1b59e925fe7e43, type: 3}
       propertyPath: m_Name
@@ -8650,7 +8658,15 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: 512cefec89dc65b41a1b59e925fe7e43, type: 3}
+      propertyPath: m_MotionVectors
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 512cefec89dc65b41a1b59e925fe7e43, type: 3}
       propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 512cefec89dc65b41a1b59e925fe7e43, type: 3}
+      propertyPath: m_DynamicOccludee
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 512cefec89dc65b41a1b59e925fe7e43, type: 3}
@@ -9826,12 +9842,16 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: 512cefec89dc65b41a1b59e925fe7e43, type: 3}
+      propertyPath: m_MotionVectors
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 512cefec89dc65b41a1b59e925fe7e43, type: 3}
       propertyPath: m_RayTracingMode
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: 512cefec89dc65b41a1b59e925fe7e43, type: 3}
       propertyPath: m_DynamicOccludee
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 512cefec89dc65b41a1b59e925fe7e43, type: 3}
       propertyPath: m_Name
@@ -12608,6 +12628,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 6af9d809e81f3f744ad80607076bbe8f, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 6af9d809e81f3f744ad80607076bbe8f, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 6af9d809e81f3f744ad80607076bbe8f, type: 3}
       propertyPath: m_Name
       value: SM_Cama
@@ -13662,12 +13690,16 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: 285e540b39f138143af52e6be1179795, type: 3}
+      propertyPath: m_MotionVectors
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 285e540b39f138143af52e6be1179795, type: 3}
       propertyPath: m_RayTracingMode
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: 285e540b39f138143af52e6be1179795, type: 3}
       propertyPath: m_DynamicOccludee
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 285e540b39f138143af52e6be1179795, type: 3}
       propertyPath: m_Name
@@ -14401,7 +14433,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 523328927}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10.00003}
+  m_LocalPosition: {x: 0, y: 0, z: -3.0000916}
   m_LocalScale: {x: 0.8436946, y: 3.5135665, z: 0.8436946}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -19861,7 +19893,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 772681877}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10.00003}
+  m_LocalPosition: {x: 0, y: 0, z: -3.0000916}
   m_LocalScale: {x: 0.8436946, y: 3.5135665, z: 0.8436946}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -20258,6 +20290,14 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: f947e202be945fd4f82adec0562ef618, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 202.012
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: f947e202be945fd4f82adec0562ef618, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: f947e202be945fd4f82adec0562ef618, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: f947e202be945fd4f82adec0562ef618, type: 3}
       propertyPath: m_Name
@@ -23572,7 +23612,7 @@ MonoBehaviour:
   dithering: 1
   stopNaNs: 0
   taaSharpenStrength: 0.5
-  TAAQuality: 2
+  TAAQuality: 0
   taaSharpenMode: 0
   taaRingingReduction: 0
   taaHistorySharpening: 0.35
@@ -25844,7 +25884,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 993476028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10.00003}
+  m_LocalPosition: {x: 0, y: 0, z: -3.0000916}
   m_LocalScale: {x: 0.8436946, y: 3.5135665, z: 0.8436946}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -25964,7 +26004,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1002851694}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: 0, y: 0, z: -3}
   m_LocalScale: {x: 0.8436946, y: 3.5135665, z: 0.8436946}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -27383,14 +27423,14 @@ MeshRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1056280855}
   m_Enabled: 1
-  m_CastShadows: 1
+  m_CastShadows: 0
   m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
+  m_DynamicOccludee: 0
   m_StaticShadowCaster: 0
-  m_MotionVectors: 1
+  m_MotionVectors: 2
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
+  m_RayTracingMode: 0
   m_RayTraceProcedural: 0
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
@@ -27618,7 +27658,15 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: 481129180acc03549b67cd6a494238bf, type: 3}
+      propertyPath: m_MotionVectors
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 481129180acc03549b67cd6a494238bf, type: 3}
       propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 481129180acc03549b67cd6a494238bf, type: 3}
+      propertyPath: m_DynamicOccludee
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 481129180acc03549b67cd6a494238bf, type: 3}
@@ -27679,6 +27727,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ddc874eea3685fd4993697345ab2fa63, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: ddc874eea3685fd4993697345ab2fa63, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: ddc874eea3685fd4993697345ab2fa63, type: 3}
+      propertyPath: m_RayTracingMode
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ddc874eea3685fd4993697345ab2fa63, type: 3}
@@ -27759,7 +27815,15 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: 481129180acc03549b67cd6a494238bf, type: 3}
+      propertyPath: m_MotionVectors
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 481129180acc03549b67cd6a494238bf, type: 3}
       propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 481129180acc03549b67cd6a494238bf, type: 3}
+      propertyPath: m_DynamicOccludee
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 481129180acc03549b67cd6a494238bf, type: 3}
@@ -29443,12 +29507,16 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: 4f2f26329f1dba5469adafad01fefca0, type: 3}
+      propertyPath: m_MotionVectors
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 4f2f26329f1dba5469adafad01fefca0, type: 3}
       propertyPath: m_RayTracingMode
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: 4f2f26329f1dba5469adafad01fefca0, type: 3}
       propertyPath: m_DynamicOccludee
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 4f2f26329f1dba5469adafad01fefca0, type: 3}
       propertyPath: m_Name
@@ -30827,12 +30895,16 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: 512cefec89dc65b41a1b59e925fe7e43, type: 3}
+      propertyPath: m_MotionVectors
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 512cefec89dc65b41a1b59e925fe7e43, type: 3}
       propertyPath: m_RayTracingMode
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: 512cefec89dc65b41a1b59e925fe7e43, type: 3}
       propertyPath: m_DynamicOccludee
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 512cefec89dc65b41a1b59e925fe7e43, type: 3}
       propertyPath: m_Name
@@ -33096,7 +33168,15 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: 67ff878864c51ff41842e51d38777f45, type: 3}
+      propertyPath: m_MotionVectors
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 67ff878864c51ff41842e51d38777f45, type: 3}
       propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 67ff878864c51ff41842e51d38777f45, type: 3}
+      propertyPath: m_DynamicOccludee
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: 67ff878864c51ff41842e51d38777f45, type: 3}
@@ -36202,7 +36282,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1368699303}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10.00003}
+  m_LocalPosition: {x: 0, y: 0, z: -3.0000916}
   m_LocalScale: {x: 0.8436946, y: 3.5135665, z: 0.8436946}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -36707,7 +36787,15 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: 481129180acc03549b67cd6a494238bf, type: 3}
+      propertyPath: m_MotionVectors
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 481129180acc03549b67cd6a494238bf, type: 3}
       propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 481129180acc03549b67cd6a494238bf, type: 3}
+      propertyPath: m_DynamicOccludee
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 481129180acc03549b67cd6a494238bf, type: 3}
@@ -37140,12 +37228,16 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: a3418504685846e41bd35b9076d4c1d3, type: 3}
+      propertyPath: m_MotionVectors
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: a3418504685846e41bd35b9076d4c1d3, type: 3}
       propertyPath: m_RayTracingMode
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: a3418504685846e41bd35b9076d4c1d3, type: 3}
       propertyPath: m_DynamicOccludee
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: a3418504685846e41bd35b9076d4c1d3, type: 3}
       propertyPath: m_Name
@@ -37925,7 +38017,15 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -6673802680727711063, guid: 36ab88573363e474c8ffd704fc3775e6, type: 3}
+      propertyPath: m_MotionVectors
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -6673802680727711063, guid: 36ab88573363e474c8ffd704fc3775e6, type: 3}
       propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -6673802680727711063, guid: 36ab88573363e474c8ffd704fc3775e6, type: 3}
+      propertyPath: m_DynamicOccludee
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 36ab88573363e474c8ffd704fc3775e6, type: 3}
@@ -38906,12 +39006,16 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: 512cefec89dc65b41a1b59e925fe7e43, type: 3}
+      propertyPath: m_MotionVectors
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 512cefec89dc65b41a1b59e925fe7e43, type: 3}
       propertyPath: m_RayTracingMode
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: 512cefec89dc65b41a1b59e925fe7e43, type: 3}
       propertyPath: m_DynamicOccludee
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 512cefec89dc65b41a1b59e925fe7e43, type: 3}
       propertyPath: m_Name
@@ -39901,7 +40005,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1516481527}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10.00003}
+  m_LocalPosition: {x: 0, y: 0, z: -3.0000916}
   m_LocalScale: {x: 0.8436946, y: 3.5135665, z: 0.8436946}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -54954,12 +55058,16 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: 512cefec89dc65b41a1b59e925fe7e43, type: 3}
+      propertyPath: m_MotionVectors
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 512cefec89dc65b41a1b59e925fe7e43, type: 3}
       propertyPath: m_RayTracingMode
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: 512cefec89dc65b41a1b59e925fe7e43, type: 3}
       propertyPath: m_DynamicOccludee
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 512cefec89dc65b41a1b59e925fe7e43, type: 3}
       propertyPath: m_Name
@@ -57083,12 +57191,16 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: 512cefec89dc65b41a1b59e925fe7e43, type: 3}
+      propertyPath: m_MotionVectors
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 512cefec89dc65b41a1b59e925fe7e43, type: 3}
       propertyPath: m_RayTracingMode
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: 512cefec89dc65b41a1b59e925fe7e43, type: 3}
       propertyPath: m_DynamicOccludee
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 512cefec89dc65b41a1b59e925fe7e43, type: 3}
       propertyPath: m_Name
@@ -60072,7 +60184,7 @@ MonoBehaviour:
   dithering: 1
   stopNaNs: 0
   taaSharpenStrength: 0.5
-  TAAQuality: 1
+  TAAQuality: 0
   taaSharpenMode: 0
   taaRingingReduction: 0
   taaHistorySharpening: 0.35
@@ -60245,12 +60357,16 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: 285e540b39f138143af52e6be1179795, type: 3}
+      propertyPath: m_MotionVectors
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 285e540b39f138143af52e6be1179795, type: 3}
       propertyPath: m_RayTracingMode
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: 285e540b39f138143af52e6be1179795, type: 3}
       propertyPath: m_DynamicOccludee
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 285e540b39f138143af52e6be1179795, type: 3}
       propertyPath: m_Name
@@ -61173,7 +61289,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1850862729}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10.00003}
+  m_LocalPosition: {x: 0, y: 0, z: -3.0000916}
   m_LocalScale: {x: 0.8436946, y: 3.5135665, z: 0.8436946}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -61181,7 +61297,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 126.000015, y: -335.0001}
+  m_AnchoredPosition: {x: 358, y: -121.2}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1850862732
@@ -61205,9 +61321,9 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 0, g: 0.5513301, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_NormalColor: {r: 0, g: 0.5513301, b: 1, a: 0.9019608}
+    m_HighlightedColor: {r: 1, g: 0, b: 0, a: 1}
+    m_PressedColor: {r: 0.9778428, g: 0, b: 1, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -63179,7 +63295,15 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: 481129180acc03549b67cd6a494238bf, type: 3}
+      propertyPath: m_MotionVectors
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 481129180acc03549b67cd6a494238bf, type: 3}
       propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 481129180acc03549b67cd6a494238bf, type: 3}
+      propertyPath: m_DynamicOccludee
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 481129180acc03549b67cd6a494238bf, type: 3}
@@ -67620,6 +67744,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 6cab13d0c7a1d2a4aa1e1d2dd772624c, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 6cab13d0c7a1d2a4aa1e1d2dd772624c, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 6cab13d0c7a1d2a4aa1e1d2dd772624c, type: 3}
       propertyPath: m_Name
       value: SM_Cama(arreglado
@@ -69767,12 +69899,16 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: 285e540b39f138143af52e6be1179795, type: 3}
+      propertyPath: m_MotionVectors
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 285e540b39f138143af52e6be1179795, type: 3}
       propertyPath: m_RayTracingMode
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: 285e540b39f138143af52e6be1179795, type: 3}
       propertyPath: m_DynamicOccludee
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 285e540b39f138143af52e6be1179795, type: 3}
       propertyPath: m_Name
