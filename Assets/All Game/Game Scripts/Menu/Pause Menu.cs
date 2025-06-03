@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 #if UNITY_EDITOR
 using UnityEditor;
 #endif 
@@ -7,6 +8,8 @@ public class PauseMenu : MonoBehaviour
 
 {
     [SerializeField] private GameObject canvasPause;
+    [SerializeField] private GameObject canvasTutorialMove;
+    [SerializeField] private GameObject canvasTutotrialPc;
     [SerializeField] private bool isPause = false;
     [SerializeField] private GameObject player3D;
     [SerializeField] private PlayerController playerControllerScript;
@@ -17,6 +20,7 @@ public class PauseMenu : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        //player3D.GetComponent<PlayerController>().canMove = true;
         playerControllerScript = player3D.GetComponent<PlayerController>();
 
     }
@@ -40,7 +44,10 @@ public class PauseMenu : MonoBehaviour
 
     public void PauseMenuActive() 
     {
+        
         canvasPause.SetActive(true);
+        canvasTutorialMove.SetActive(false);
+        canvasTutotrialPc.SetActive(false);
         Time.timeScale = 0;
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
@@ -70,11 +77,7 @@ public class PauseMenu : MonoBehaviour
 
     public void QuitGame()
     {
-#if UNITY_EDITOR
-        EditorApplication.isPlaying = false;
-#else
-        Application.Quit();
-#endif
+        SceneManager.LoadScene("MainMenu");
     }
 
     public void SettingsActive()

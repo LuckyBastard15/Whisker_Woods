@@ -24,6 +24,8 @@ public class CaptchaManager : MonoBehaviour
     public GameObject npcObject;
     public GameObject lockImage;
 
+    [SerializeField] private Manager manager;
+
     void Start()
     {
         // Mapeo de botones
@@ -76,6 +78,7 @@ public class CaptchaManager : MonoBehaviour
             playerMovementScript.enabled = true;
             col2d.enabled = false;
             npcScript.enabled = false;
+            manager.Puzzle4Completed();
         }
         else
         {

@@ -3,9 +3,20 @@ using UnityEngine;
 
 public class PCtutorial : MonoBehaviour
 {
-
     [SerializeField] GameObject PcCanvas;
+    [SerializeField] Collider PcCollider; 
+
     public float displayDuration = 7f;
+
+    private void Start()
+    {
+        
+        if (PcCollider == null && PcCanvas != null)
+        {
+            PcCollider = PcCanvas.GetComponent<Collider>();
+        }
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
@@ -16,10 +27,14 @@ public class PCtutorial : MonoBehaviour
 
     private System.Collections.IEnumerator ShowCanvasTemporarily()
     {
-        PcCanvas.SetActive(true);           // Mostrar Canvas
-        yield return new WaitForSeconds(displayDuration); // Esperar
-        PcCanvas.SetActive(false);
-        Destroy(PcCanvas); 
+        PcCanvas.SetActive(true);           
+        yield return new WaitForSeconds(displayDuration); 
+        PcCanvas.SetActive(false);          
+
+        if (PcCollider != null)
+        {
+            PcCollider.enabled = false;     
+        }
     }
 }
 

@@ -13,17 +13,22 @@ public class Manager : MonoBehaviour
     [SerializeField] private GameObject Item1;
     [SerializeField] private GameObject Item2;
     [SerializeField] private GameObject Item3;
+    [SerializeField] private GameObject Item4;
     //[SerializeField] private GameObject Item4;
 
     public AudioSource audioSource;
     
     [SerializeField] private AudioSource getItem;
+    [SerializeField] ComputerInteraction ComputerInteraction;
+    [SerializeField] private RandomLights randomLights;
 
     void Update()
     {
         if (puzzle1Completed && puzzle2Completed && puzzle3Completed && puzzle4Completed)
         {
             AllPuzzlesCompleted();
+            randomLights.PauseFlicker();
+            ComputerInteraction.ExitComputer();
         }
 
         if (puzzle1Completed)
@@ -37,6 +42,10 @@ public class Manager : MonoBehaviour
         if (puzzle3Completed)
         {
             Item3.SetActive(true);
+        }
+        if (puzzle4Completed)
+        {
+            Item4.SetActive(true);
         }
 
 
@@ -78,8 +87,8 @@ public class Manager : MonoBehaviour
 
     public void Puzzle4Completed()
     {
-        puzzle3Completed = true;
-        Debug.Log("Puzzle 3 completado");
+        puzzle4Completed = true;
+        Debug.Log("Puzzle 4 completado");
         
         audioSource.Play();
 

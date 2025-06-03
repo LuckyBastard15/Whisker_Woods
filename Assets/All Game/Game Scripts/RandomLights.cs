@@ -4,12 +4,14 @@ using UnityEngine;
 
 public class RandomLights : MonoBehaviour
 {
-    public List<Light> luces; // Lista de luces en la escena
-    public float flickerSpeed = 0.2f; // Velocidad del parpadeo
+    public List<Light> luces;
+    public float flickerSpeed = 0.2f; 
+
+    private Coroutine flickerCoroutine;
 
     void Start()
     {
-        StartCoroutine(FlickerLights());
+        flickerCoroutine = StartCoroutine(FlickerLights());
     }
 
     IEnumerator FlickerLights()
@@ -18,9 +20,24 @@ public class RandomLights : MonoBehaviour
         {
             foreach (Light luz in luces)
             {
-                luz.enabled = !luz.enabled; // Alterna el estado de la luz
-                yield return new WaitForSeconds(Random.Range(0.05f, flickerSpeed)); // Retraso aleatorio para cada luz
+                luz.enabled = !luz.enabled; 
+                yield return new WaitForSeconds(Random.Range(0.05f, flickerSpeed)); 
             }
+        }
+    }
+
+    
+    public void PauseFlicker()
+    {
+        if (flickerCoroutine != null)
+        {
+            StopCoroutine(flickerCoroutine);
+            flickerCoroutine = null;
+        }
+
+        foreach (Light luz in luces)
+        {
+            luz.enabled = false; // Apaga la luz
         }
     }
 }

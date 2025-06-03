@@ -10,22 +10,33 @@ public class PlayerController : MonoBehaviour
 
     public bool canMove = true;
 
-    public float minVerticalAngle = -30f;  // 👈 Ángulo mínimo de rotación vertical
-    public float maxVerticalAngle = 60f;   // 👈 Ángulo máximo de rotación vertical
+    public float minVerticalAngle = -30f;  
+    public float maxVerticalAngle = 60f;   
 
     void Start()
     {
+        Time.timeScale = 1f;
+        canMove = true;
         characterController = GetComponent<CharacterController>();
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
     }
+    private void Awake()
+    {
+        canMove = true;
+        Debug.Log("can move");
+    }
 
     void Update()
     {
-        if (canMove==true)
+        if (canMove && characterController != null)
         {
             Move();
             Rotate();
+        }
+        else if (characterController == null)
+        {
+            Debug.LogWarning("CharacterController es null");
         }
     }
 
@@ -34,7 +45,7 @@ public class PlayerController : MonoBehaviour
         float moveX = 0f;
         float moveZ = 0f;
 
-        // Solo detectar WSAD, no flechas
+       
         if (Input.GetKey(KeyCode.W)) moveZ = 1f;
         if (Input.GetKey(KeyCode.S)) moveZ = -1f;
         if (Input.GetKey(KeyCode.D)) moveX = 1f;

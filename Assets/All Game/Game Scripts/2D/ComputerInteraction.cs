@@ -5,6 +5,8 @@ using UnityEngine.Audio;
 
 public class ComputerInteraction : MonoBehaviour
 {
+    private RandomLights randomLightsl;
+
     public Transform computerScreenPosition;
     public GameObject computerUI;
     //public KeyCode interactKey = KeyCode.E;
@@ -44,6 +46,12 @@ public class ComputerInteraction : MonoBehaviour
 
     public AudioSource audioSourceDoor;
     [SerializeField] private AudioSource door;
+
+    public AudioSource audioSourceCat;
+    [SerializeField] private AudioSource cat;
+
+    [SerializeField] GameObject tvOn;
+    [SerializeField] GameObject jumpScare;
 
     // delay entre interacciones
     private bool canInteract = true;
@@ -152,7 +160,7 @@ public class ComputerInteraction : MonoBehaviour
         canInteract = true;  // Rehabilitar interacción
     }
 
-    private void ExitComputer()
+    public void ExitComputer()
 
     {
         audioSourceSong.Stop();
@@ -183,38 +191,59 @@ public class ComputerInteraction : MonoBehaviour
         switch (count)
         {
             case 3:
+                //audioSourceCat.Play();
+
                 Debug.Log("Aparece un sonido extraño.");
                 audioSourceDoor.Play();
+
+                break;
+            case 4:
+                jumpScare.SetActive(true);
+                randomLights.PauseFlicker();
+                tvOn.SetActive(true);
                 break;
 
             case 5:
                 Debug.Log(" luz parpadea.");
                 randomLights.enabled = true;
+                //ExitComputer();
+                tvOn.SetActive(false);
 
                 break;
 
             case 8:
-                Debug.Log(" El entorno cambia ligeramente.");
+                Debug.Log(" El entorno cambia");
                 //KillPlayer();
                 Fog.SetActive(true);
 
                 break;
 
             case 10:
-                Debug.Log(" La pantalla de la computadora se distorsiona.");
+                Debug.Log(" La pantalla de la tv se prende.");
+                tvOn.SetActive(true);
                 break;
 
             case 13:
                 Debug.Log(" Se escucha un maullido aterrador.");
+                audioSourceCat.Play();
+                break;
+
+            case 14:
+                ExitComputer();
+                audioSourceDoor.Play();
                 break;
 
             case 15:
                 Debug.Log(" La computadora intenta apagarse sola.");
+                ExitComputer();
                 break;
 
             case 17:
-                Debug.Log("Evento en interacción 17: ¡El jugador muere!");
+                tvOn.SetActive(true);
+                randomLights.PauseFlicker();
+                Debug.Log("El jugador muere!");
                 KillPlayer();
+                
                 hasReachedLimit = true;
                 break;
 
