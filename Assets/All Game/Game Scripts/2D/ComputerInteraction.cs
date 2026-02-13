@@ -15,7 +15,7 @@ public class ComputerInteraction : MonoBehaviour
 
     private Transform player;
     private PlayerController playerControllerScript;
-    private bool isUsingComputer = false;
+    public bool isUsingComputer = false;
     private Vector3 originalPosition;
     private Vector3 originalCameraPosition;
     private Quaternion originalRotation;
@@ -109,7 +109,7 @@ public class ComputerInteraction : MonoBehaviour
         canInteract = true;  // Rehabilitar interacción
     }
 
-    private void UseComputer()
+    public void UseComputer()
     {
         //VirtualPCInput.UsingPcNow();
         if (audioSourceSong && song2DLoop)
@@ -259,6 +259,12 @@ public class ComputerInteraction : MonoBehaviour
         PlayerDies.PlayerDiesActive();
         Debug.Log("Game Over. Puedes poner aquí una animación o cargar otra escena.");
         //SceneManager.LoadScene("GameOverScene");
+    }
+
+
+    public void canPause()
+    {
+        isUsingComputer = true;
     }
 }
  

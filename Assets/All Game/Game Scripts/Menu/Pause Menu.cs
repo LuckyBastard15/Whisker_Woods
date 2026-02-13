@@ -15,6 +15,8 @@ public class PauseMenu : MonoBehaviour
     [SerializeField] private PlayerController playerControllerScript;
     [SerializeField] private GameObject settingsPanel;
 
+    [SerializeField] ComputerInteraction computerInteraction;
+
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -28,15 +30,24 @@ public class PauseMenu : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //computerInteraction.canPause();
+
+
+
         if (Input.GetKeyDown(KeyCode.Escape))
         {
+            
             if (isPause)
             {
                 ResumeActive(); 
             }
             else
             {
-                PauseMenuActive();
+                if(computerInteraction.isUsingComputer == false)
+                {
+                    PauseMenuActive();
+
+                }
             }
         }
     }

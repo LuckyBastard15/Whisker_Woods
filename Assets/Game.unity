@@ -3905,7 +3905,7 @@ MonoBehaviour:
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 1
+  m_MatchWidthOrHeight: 0.5
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
@@ -3920,7 +3920,7 @@ Canvas:
   m_GameObject: {fileID: 118753051}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_Camera: {fileID: 0}
   m_PlaneDistance: 100
   m_PixelPerfect: 1
@@ -9859,7 +9859,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 331122702}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 24}
+  m_LocalPosition: {x: 0, y: 0, z: 24.000044}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -9882,10 +9882,10 @@ RectTransform:
   - {fileID: 1966996890}
   m_Father: {fileID: 1241362746}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: 1920, y: 1080}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &331122704
 MonoBehaviour:
@@ -35888,6 +35888,7 @@ MonoBehaviour:
   computerScreenPosition: {fileID: 603106631}
   computerUI: {fileID: 1784321471}
   computerCollider: {fileID: 613963563}
+  isUsingComputer: 0
   transitionDuration: 1
   Luces: {fileID: 677890913}
   randomLights: {fileID: 677890915}
@@ -37565,7 +37566,7 @@ MonoBehaviour:
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_MatchWidthOrHeight: 0.5
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
@@ -76357,6 +76358,7 @@ MonoBehaviour:
   player3D: {fileID: 2042577285}
   playerControllerScript: {fileID: 2042577290}
   settingsPanel: {fileID: 1132661517}
+  computerInteraction: {fileID: 1188490260}
 --- !u!4 &2003489758
 Transform:
   m_ObjectHideFlags: 0
